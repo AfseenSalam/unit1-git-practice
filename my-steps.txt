@@ -1,87 +1,282 @@
 ### Step 2A
+/c/Users/sm2239
 
 
 ### Step 2B
+$ cd Desktop
 
 
 ### Step 2C
+$ cd  unit1-git-practice
 
 
 ### Step 2D
+$ pwd
+/c/Users/sm2239/Desktop/unit1-git-practice
 
 
 ### Step 2E
+$ ls -la
+total 9
+drwxr-xr-x 1 sm2239 197121   0 Jul  9 12:57 ./
+drwxr-xr-x 1 sm2239 197121   0 Jul  9 12:55 ../
+-rw-r--r-- 1 sm2239 197121 430 Jul  9 12:56 my-steps.txt
+
+$ ls
+my-steps.txt
 
 
 ### Step 2F
+my-steps.txt
 
 
 ### Step 2G
+$ cd ~
 
 
 ### Step 2H
+/c/Users/sm2239
 
 
 ### Step 2I
+$ ls
+'3D Objects'/
+ AppData/
+ Apple/
+'Application Data'@
+ BullseyeCoverageError.txt
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{a2c3a709-e39b-11eb-af86-d884899c6641}.TM.blf
+ NTUSER.DAT{a2c3a709-e39b-11eb-af86-d884899c6641}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a2c3a709-e39b-11eb-af86-d884899c6641}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ REACHit/
+ README.md~
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ afseenisgreat/
+ iCloudDrive/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ source/
+ testfolder/
 
 
 ### Step 2J
+$ cd ~
+
 
 
 ### Step 2K
 
+$ cd Desktop
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop
+$ cd unit1-git-practice
 
 
 ### Step 3A
 
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice
+$ mkdir veggies
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice
+$ mkdir meats
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice
+$ mkdir desserts
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice
+$ ls
+desserts/  meats/  my-steps.txt  veggies/
+
 
 ### Step 3B
+$ mv desserts sweets
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice
+$ ls
+meats/  my-steps.txt  sweets/  veggies/
 
 
 ### Step 3C
+$ mkdir proteins
 
 
 ### Step 3D
+$ mv meats proteins
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice
+$ ls
+my-steps.txt  proteins/  sweets/  veggies/
 
 
 ### Step 3E
 
 
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice
+$ cd veggies
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice/veggies
+$ touch "carrot.txt"
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice/veggies
+$ touch "pea.txt"
+
+
 ### Step 3F
+$ cd ..
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice
+$ cd sweets
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice/sweets
+$ touch "cookie.txt"
+
 
 
 ### Step 3G
+$ mv cookie.txt donut.txt
 
 
 ### Step 3H
+$ touch "thing.txt"
 
 
 ### Step 3I
+$ cp thing.txt tofu.txt
 
 
 ### Step 3J
+$ mv tofu.txt proteins
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice
+$ ls
+my-steps.txt  proteins/  sweets/  thing.txt  veggies/
+
 
 
 ### Step 3K
+$ cp thing.txt crab.txt
+$ mv crab.txt proteins
+cd proteins
+$ mv crab.txt meats
 
 
 ### Step 3L
-
+$ rm thing.txt
 
 ### Step 3M
+$ cp -r veggies plants
 
 
 ### Step 3N
 
+$ mkdir "drinks"
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice
+$ ls
+drinks/  meats  my-steps.txt  plants/  proteins/  sweets/  veggies/
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice
+$ rm -r drinks
 
 
 ### Step 4
+$ git init
+Initialized empty Git repository in C:/Users/sm2239/Desktop/unit1-git-practice/.git/
+$ git add .
+$ git commit -m 'frist commit'
+[master (root-commit) 4c59b15] frist commit
+ 8 files changed, 88 insertions(+)
+ create mode 100644 my-steps.txt
+ create mode 100644 plants/carrot.txt
+ create mode 100644 plants/pea.txt
+ create mode 100644 proteins/meats/crab.txt
+ create mode 100644 proteins/tofu.txt
+ create mode 100644 sweets/donut.txt
+ create mode 100644 veggies/carrot.txt
+ create mode 100644 veggies/pea.txt
+
 
 
 ### Step 5
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice (master)
+$ git remote add origin https://github.com/AfseenSalam/unit1-git-practice.git
+git branch -M main
+git push -u origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (8/8), 671 bytes | 335.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/AfseenSalam/unit1-git-practice.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
 
 
 ### Step 6
+$ touch menu.txt
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice (main)
+$ ls
+menu.txt  my-steps.txt  plants/  proteins/  sweets/  veggies/
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        menu.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+$ git add .
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice (main)
+$ git commit -m 'starting a menu'
+[main 0cfb701] starting a menu
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 menu.txt
+
+sm2239@LAPTOP-5J3P8SL4 MINGW64 ~/Desktop/unit1-git-practice (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 276 bytes | 276.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/AfseenSalam/unit1-git-practice.git
+   4c59b15..0cfb701  main -> main
 
 
 ### Step 7
